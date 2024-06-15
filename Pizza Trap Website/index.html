@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta carset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Trap - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navContainer">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="Images/pizzaTrapLogo.png" class="pizzaTrapLogo">
+                <img src="Images/pizzaTrapLogoPhone.png" class="pizzaTrapLogoPhone">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="menu.html"><h2>Menu</h2></a></li>
+                    <li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+                    <li><a href="aboutUs.html"><h2>About Us</h2></a></li>
+                </ul>
+                <div class="dropdown">
+                    <i onclick="dropDown()" class="material-icons" id="dropDownPhone">reorder</i>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="menu.html">Menu</a>
+                      <a href="contactUs.html">Contact Us</a>
+                      <a href="aboutUs.html">About Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="overlay">
+            <div class="button-layer">
+                <a href="contactUs.html">
+                    <button class="dineInBut" type="button"><h2>Dine In</h2></button>
+                </a>
+                <a href="menu.html">
+                    <button class="takeAwayBut" type="button"><h2>Take Away</h2></button>
+                </a>
+                <div class="line-break"></div>
+                <h3>Wed - Sun: 5pm-9pm</h3>
+                <div class="gap-break"></div>
+                <h3>Mon - Sun: 5pm-9pm</h3>
+            </div>
+            <div class="dark-layer"></div>
+        </div>
+        <img src="Images/pizzaTrapHome.jpg" class="bg-image">
+        <div class="img-bg"></div>
+    </div>
+
+    <div class="section-2">
+        <img src="Images/peopleIconHome.jpg" class="peopleIconHome">
+        <a href="contactUs.html">
+            <button class="reservationButton" type="button"><h2><span>Reservation</span></h2></button>
+        </a>
+
+        <img src="Images/pizzaIconHome.png" class="pizzaIconHome">
+        <a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank">
+            <button class="deliveryButton" type="button"><h2><span>Delivery</span></h2></button>
+        </a>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.376741957989!2d172.646176615494!3d-43.5361880791255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3189f557cfe127%3A0x759964d414e3ea5d!2s371%20Saint%20Asaph%20Street%2C%20Christchurch%20Central%20City%2C%20Christchurch%208011!5e0!3m2!1sen!2snz!4v1648531753020!5m2!1sen!2snz" class="mapHome" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://www.google.com/maps?ll=-43.536188,172.648365&z=16&t=m&hl=en&gl=NZ&mapclient=embed&q=371+Saint+Asaph+Street+Christchurch+Central+City+Christchurch+8011" target="_blank">
+            <button class="locationButton" type="button"><h2><span>Location</span></h2></button>
+        </a>
+    </div>
+
+    <script>
+        function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-icons')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="botNavBar">
+        <div class="leftNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>About Us</p1></a></li>
+                <li><a href="contactUs.html"><p1>Contact Us</p1></a></li>
+                <li><a href="menu.html"><p1>Menu</p1></a></li>
+                <li><a href="contactUs.html"><p1>Book A Reservation</p1></a></li>
+            </ul>
+        </div>
+        <div class="midNav">
+            <ul>
+                <li><a href="contactUs.html"><p1>Social Media</p1></a></li>
+                <li><a href="contactUs.html"><p1>Phone</p1></a></li>
+                <li><a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank"><p1>Delivery</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Opening Hours</p1></a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>Terms & Conditions</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Refunds</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Cancellations</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Loyalty</p1></a></li>
+            </ul>
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/pizzatrapnz" target="_blank">
+                <img src="Images/facebookLogo.png" class="facebookLogo">
+            </a>
+            <a href="https://www.instagram.com/pizzatrapnz/" target="_blank">
+                <img src="Images/instagramLogo.png" class="instagramLogo">
+            </a>
+        </div>
+        <div class="copyright">
+            <p3>© 2021 Space Academy Ltd.</p3>
+        </div>
+    </div>
+</footer>
+</html>

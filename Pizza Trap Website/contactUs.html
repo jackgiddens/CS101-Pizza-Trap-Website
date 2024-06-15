@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta carset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Trap - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navContainer">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="Images/pizzaTrapLogo.png" class="pizzaTrapLogo">
+                <img src="Images/pizzaTrapLogoPhone.png" class="pizzaTrapLogoPhone">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="menu.html"><h2>Menu</h2></a></li>
+                    <li><a class="selected" href="contactUs.html"><h2>Contact Us</h2></a></li>
+                    <li><a href="aboutUs.html"><h2>About Us</h2></a></li>
+                </ul>
+                <div class="dropdown">
+                    <i onclick="dropDown()" class="material-icons" id="dropDownPhone">reorder</i>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="menu.html">Menu</a>
+                      <a href="contactUs.html">Contact Us</a>
+                      <a href="aboutUs.html">About Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="contactContainer">
+        <div class="contactLeftSection">
+            <h1>Book a Reservation</h1>
+            <div class="bookSection">
+                <h2>Reservation</h2>
+                <h3>Date</h3>
+                <input type="date" class="date" type="text" id="date" name="date">
+
+                <h3>Time</h3>
+                <select class="time" id="time">
+                    <option value="time" hidden selected>Time...</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:15">17:15</option>
+                    <option value="17:30">17:30</option>
+                    <option value="17:45">17:45</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:15">18:15</option>
+                    <option value="18:30">18:30</option>
+                    <option value="18:45">18:45</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:15">19:15</option>
+                    <option value="19:30">19:30</option>
+                    <option value="19:45">19:45</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:15">20:15</option>
+                    <option value="22:30">20:30</option>
+                    <option value="22:45">22:45</option>
+                </select>
+
+                <h3>Party Size</h3>
+                <select class="partySize" id="partySize">
+                    <option value="partySize" hidden selected>Party Size...</option>
+                    <option value="1 Person">1 Person</option>
+                    <option value="2 People">2 People</option>
+                    <option value="3 People">3 People</option>
+                    <option value="4 People">4 People</option>
+                    <option value="5 People">5 People</option>
+                    <option value="6 People">6 People</option>
+                    <option value="7 People">7 People</option>
+                    <option value="8 People">8 People</option>
+                    <option value="9 People">9 People</option>
+                    <option value="10 People">10 People</option>
+                    <option value="11 People">11 People</option>
+                    <option value="12 People">12 People</option>
+                    <option value="13 People">13 People</option>
+                    <option value="14 People">14 People</option>
+                    <option value="15 People">15 People</option>
+                    <option value="16 People">16 People</option>
+                    <option value="17 People">17 People</option>
+                    <option value="18 People">18 People</option>
+                    <option value="19 People">19 People</option>
+                    <option value="20 People">20 People</option>
+                </select>
+                <div class="bookNow">
+                    <button onclick="bookFunction(document.getElementById('date').value, document.getElementById('time').value, document.getElementById('partySize').value)" class="bookNowButton" type="button"><h3>Book Now</h3></button>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Sign Up for News, Events and Much More!</h3>
+                <input placeholder="Enter You Email Here..." class="subBox" type="text" id="sub" name="sub">
+                <button class="subButton" type="button"><h3>Book Now</h3></button>            
+            </div>
+        </div>
+
+        <div class="contactRightSection">
+            <div class="contact">
+                <h1>Contact Pizza Trap</h1>
+                <a href="tel:022 417 0487">
+                    <h2>022 417 0487</h2>
+                </a>
+                <a href="https://www.facebook.com/pizzatrapnz" target="_blank"><br>
+                    <h2>Facebook</h2>
+                </a>
+                <a href="https://www.instagram.com/pizzatrapnz/" target="_blank"><br>
+                    <h2>Instagram</h2>
+                </a>
+            </div>
+        </div>
+        <div class="imageDark"></div>
+        <img src="Images/contactPageBg.jpg" class="contactPageBg">
+    </div>
+    <script>
+        function bookFunction(_date, _time, _partySize) {
+            if (_date == "") {
+                window.alert("You must first enter a date.");
+            } else if (_time == "time") {
+                window.alert("You must enter a time.");
+            } else if (_partySize == "partySize") {
+                window.alert("You must enter your party size.")
+            } else {
+                window.alert("You are booked in on the " + _date + " at " + _time + " with " + _partySize + ".");
+                document.location.reload();
+            }
+        }
+
+        function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-icons')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="botNavBar">
+        <div class="leftNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>About Us</p1></a></li>
+                <li><a href="contactUs.html"><p1>Contact Us</p1></a></li>
+                <li><a href="menu.html"><p1>Menu</p1></a></li>
+                <li><a href="contactUs.html"><p1>Book A Reservation</p1></a></li>
+            </ul>
+        </div>
+        <div class="midNav">
+            <ul>
+                <li><a href="contactUs.html"><p1>Social Media</p1></a></li>
+                <li><a href="contactUs.html"><p1>Phone</p1></a></li>
+                <li><a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank"><p1>Delivery</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Opening Hours</p1></a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>Terms & Conditions</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Refunds</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Cancellations</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Loyalty</p1></a></li>
+            </ul>
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/pizzatrapnz" target="_blank">
+                <img src="Images/facebookLogo.png" class="facebookLogo">
+            </a>
+            <a href="https://www.instagram.com/pizzatrapnz/" target="_blank">
+                <img src="Images/instagramLogo.png" class="instagramLogo">
+            </a>
+        </div>
+        <div class="copyright">
+            <p3>© 2021 Space Academy Ltd.</p3>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta carset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Trap - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navContainer">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="Images/pizzaTrapLogo.png" class="pizzaTrapLogo">
+                <img src="Images/pizzaTrapLogoPhone.png" class="pizzaTrapLogoPhone">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="menu.html"><h2>Menu</h2></a></li>
+                    <li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+                    <li><a class="selected" href="aboutUs.html"><h2>About Us</h2></a></li>
+                </ul>
+                <div class="dropdown">
+                    <i onclick="dropDown()" class="material-icons" id="dropDownPhone">reorder</i>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="menu.html">Menu</a>
+                      <a href="contactUs.html">Contact Us</a>
+                      <a href="aboutUs.html">About Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="aboutContainer">
+        <div class="aboutLeftSection">
+            <h1>About Us</h1>
+            <h2>Terms & Conditions</h2>
+            <p1>If you cancel your order a cancellation fee may apply. Please contact the<br> 
+                relevant store for full details.</p1>
+
+            <h2>Refunds</h2>
+            <p1>Please select your order carefully as refunds are provided at the sole discretion <br> 
+                of the store and are not guaranteed.</p1>
+
+            <h2>Cancellations</h2>
+            <p1>If you cancel your order a cancellation fee may apply.</p1>
+
+            <h2>Loyalty</h2>
+            <p1>Please refer to your existing loyalty provider.</p1>
+        </div>
+
+        <div class="aboutRightSection">
+            <h1>Opening Hours</h1>
+            <div class="aboutRightSection-2">
+                <div class="openTextSection">
+                    <a href="menu.html">
+                        <h2>Take Away</h2>
+                    </a>
+                    <h3>Mon - Sun</h3>
+                    <p1>5:00 pm - 9:00 pm</p1>
+        
+                    <a href="contactUs.html">
+                        <h2>Dine In</h2>
+                    </a>
+                    <h3>Wed - Sun</h3>
+                    <p1>5:00 pm - 9:00 pm</p1>
+        
+                    <a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank">
+                        <h2>Delivery</h2>
+                    </a>
+                    <h3>Sun - Fri</h3>
+                    <p1>5:00 pm - 9:00 pm</p1>
+                    <br><br>
+                    <h3>Sat</h3>
+                    <p1>5:00 pm - 9:00 pm<br>
+                        2:00 pm - 5:00 pm</p1>
+                </div>
+                
+                <div class="openImageSection">
+                    <img src="Images/openingHoursImage.jpg" class="openImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="locationSection">
+        <h1>Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.376741957989!2d172.646176615494!3d-43.5361880791255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3189f557cfe127%3A0x759964d414e3ea5d!2s371%20Saint%20Asaph%20Street%2C%20Christchurch%20Central%20City%2C%20Christchurch%208011!5e0!3m2!1sen!2snz!4v1648531753020!5m2!1sen!2snz" class="mapAboutUs" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script>
+        function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-icons')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="botNavBar">
+        <div class="leftNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>About Us</p1></a></li>
+                <li><a href="contactUs.html"><p1>Contact Us</p1></a></li>
+                <li><a href="menu.html"><p1>Menu</p1></a></li>
+                <li><a href="contactUs.html"><p1>Book A Reservation</p1></a></li>
+            </ul>
+        </div>
+        <div class="midNav">
+            <ul>
+                <li><a href="contactUs.html"><p1>Social Media</p1></a></li>
+                <li><a href="contactUs.html"><p1>Phone</p1></a></li>
+                <li><a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank"><p1>Delivery</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Opening Hours</p1></a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>Terms & Conditions</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Refunds</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Cancellations</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Loyalty</p1></a></li>
+            </ul>
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/pizzatrapnz" target="_blank">
+                <img src="Images/facebookLogo.png" class="facebookLogo">
+            </a>
+            <a href="https://www.instagram.com/pizzatrapnz/" target="_blank">
+                <img src="Images/instagramLogo.png" class="instagramLogo">
+            </a>
+        </div>
+        <div class="copyright">
+            <p3>© 2021 Space Academy Ltd.</p3>
+        </div>
+    </div>
+</footer>
+</html>

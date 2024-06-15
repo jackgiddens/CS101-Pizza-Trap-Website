@@ -1,0 +1,1482 @@
+body {
+    background-color: #894F4F;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+/******** FONTS ********/
+
+p1 {
+    font-family: "Paytone One";
+    font-size: 18px; 
+}
+
+p2 {
+    font-family: "Paytone One";
+    font-size: 14px; 
+}
+
+p3 {
+    font-family: "Paytone One";
+    font-size: 12px; 
+}
+
+h1 {
+    font-family: "Paytone One";
+    font-size: 48px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: "Paytone One";
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: "Paytone One";
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/******** NAVIGATION SECTION ********/
+
+.navContainer {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.selected {
+    color: #6A977F;
+}
+
+.navbar {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    height: 125px;
+    padding-left: 11%;
+    padding-right: 11%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #075229;
+    margin-left: 250px;
+    margin-right: 75px;
+    display: block;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #6A977F;
+}
+
+.pizzaTrapLogo {
+    width: 200px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.pizzaTrapLogoPhone {
+    display: none;
+}
+
+#dropDownPhone {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+/******** BOTTOM NAVIGATION BAR ********/
+
+.botNavBar {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    background-color: #602F2F;
+    height: 300px;
+    line-height: 35px;
+}
+
+.botNavBar ul li {
+    list-style: none;
+}
+
+.botNavBar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.botNavBar ul li a:hover {
+    color: grey;
+}
+
+.botNavBar p3 {
+    color: white;
+}
+
+.leftNav {
+    width: 20%;
+}
+
+.midNav {
+    width: 20%;
+}
+
+.rightNav {
+    width: 20%;
+}
+
+.socialLinks {
+    width: 20%;
+}
+
+.facebookLogo {
+    width: 25%;
+    margin-left: 20%;
+}
+
+.instagramLogo{
+    width: 25%;
+    margin-left: 20%;
+}
+
+.copyright {
+    position: absolute;
+    right: 0.5%; 
+    bottom: 0px;
+}
+
+/************************************ 
+
+            HOME PAGE 
+
+************************************/
+
+.section-1 {
+    position: relative;
+    display: flex;
+}
+
+.button-layer h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.overlay {
+    justify-content: center;
+}
+
+.button-layer {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+}
+
+.dineInBut {
+    width: 300px;
+    height: 100px;
+    background-color: #BE6D6D;
+    padding: none;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px 0px 0px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dineInBut:hover {
+    background: #5f3737;
+}
+
+.takeAwayBut {
+    width: 300px;
+    height: 100px;
+    background-color: #5F8C74;
+    padding: none;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0px 12px 12px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.takeAwayBut:hover {
+    background: #334b3e;
+}
+
+.line-break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.gap-break {
+    flex-grow: 0.13;
+}
+
+.dark-layer {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.bg-image {
+    width: 70%; 
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-bg {
+    background: #602F2F;
+    width: 100%;
+    height: 600px;
+    z-index: -3;
+}
+
+.section-2 {
+    position: relative;
+    display: flex;
+    height: 700px;
+}
+
+.peopleIconHome {
+    width: 25%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.reservationButton {
+    width: 275px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: none;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.reservationButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.reservationButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.reservationButton:hover span {
+    padding-right: 25px;
+}
+  
+.reservationButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.pizzaIconHome {
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.deliveryButton {
+    width: 275px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: none;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.deliveryButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.deliveryButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.deliveryButton:hover span {
+    padding-right: 25px;
+}
+  
+.deliveryButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.mapHome {
+    width: 25%;
+    height: 375px;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.locationButton {
+    width: 275px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: none;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.locationButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.locationButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.locationButton:hover span {
+    padding-right: 25px;
+}
+  
+.locationButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/************************************ 
+
+            Menu PAGE 
+
+************************************/
+
+.menuContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.menuContainer h1 {
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.menuSection {
+    width: 70%;
+}
+
+.menuHeader {
+    width: 63%;
+    height: 100px;
+    background: #602F2F;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    left: 3.5%;
+}
+
+.headerSticky {
+    position: fixed;
+    top: 3.5%;
+}
+
+.menuHeader a {
+    text-decoration: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menuHeader h3 {
+    color: white;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.menuHeader h3:hover{
+    color: grey;
+}
+
+.foodSection {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.foodItem {
+    width: 20%;
+    height: 75%;
+    background: white;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+}
+
+.foodItem p1 {
+    margin-left: 2%;
+}
+
+.foodItem p2 {
+    margin-left: 2%;
+}
+
+.ingredients {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.addButton {
+    width: 200px;
+    background: #07522960;
+    padding: none;
+    border: none;
+    color: white;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+}
+
+.addButton:hover {
+    background: #075229;
+}
+
+.pizza {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.food {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.food h2 {
+    color: white;
+    margin-top: 100px;
+}
+
+.orderSection {
+    width: 30%;
+    margin-top: 3%;
+}
+
+.cartSection {
+    width: 25%;
+    height: 651px;
+    margin-left: 2%;
+    background: #602F2F;
+    position: absolute;
+}
+
+.cartSticky {
+    position: fixed;
+    top: 3.5%;
+}
+
+.cart {
+    text-align: center;
+}
+
+.cart h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+.cart p1 {
+    color: white;
+}
+
+.checkOut {
+    bottom: 0%;
+    width: 100%;
+    height: 150px;
+    background: #3E1111;
+    position: absolute;
+}
+
+.totalsection {
+    display: flex;
+    width: 100%;
+}
+
+.totalsection p1 {
+    color: white;
+}
+
+.totalLeft {
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 50%;
+}
+
+.totalRight {
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 5%;
+    width: 50%;
+}
+
+.checkOutSection {
+    width: 90%;
+    height: 45%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-top: 2.5%;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+}
+
+.itemsTotal {
+    width: 50%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.checkOutItems {
+    width: 50%;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+.itemsTotal p1 {
+    color: white;
+}
+
+.checkOutButton {
+    width: 150px;
+    background: #5f3737;
+    padding: none;
+    border: none;
+    color: white;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkOutButton:hover{
+    background: #3E1111;
+}
+
+.toTop {
+    position: absolute;
+    bottom: -5%;
+    display: none;
+}
+
+.toTop a {
+    text-decoration: underline;
+    color: white;
+}
+
+.phoneBasket {
+    display: none;
+}
+
+/************************************ 
+
+            Contact Us PAGE 
+
+************************************/
+
+.contactContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1200px;
+}
+
+.contactLeftSection {
+    width: 50%;
+    text-align: center;
+}
+
+.contactLeftSection h1 {
+    margin-top: 8%;
+    color: white;
+}
+
+.bookSection {
+    background: #602F2F;
+    height: 650px;
+    width: 65%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.bookSection h2 {
+    color: white;
+    padding-top: 5%;
+}
+
+.bookSection h3 {
+    color: white;
+    padding-top: 5%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.date {
+    width: 70%;
+    height: 50px;
+    background: white;
+    margin: auto;
+    margin-top: 1%;
+    font-size: 24px;
+    font-family: "Paytone One";
+    color: grey;
+}
+
+.time {
+    width: 70%;
+    height: 50px;
+    background: white;
+    margin: auto;
+    margin-top: 1%;
+    overflow: scroll;
+    font-size: 24px;
+    font-family: "Paytone One";
+    color: grey;
+}
+
+.partySize {
+    width: 70%;
+    height: 50px;
+    background: white;
+    margin: auto;
+    margin-top: 1%;
+    font-size: 24px;
+    font-family: "Paytone One";
+    color: grey;
+}
+
+.bookNow h3 {
+    color: white;
+    padding-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.bookNowButton {
+    width: 50%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: none;
+    border: none;
+    color: white;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    margin-top: 8%;
+    transition: 0.2s;
+}
+
+.bookNowButton:hover {
+    background: black;
+}
+
+.subscribe {
+    margin-top: 4%;
+}
+
+.subscribe h3 {
+    color: white;
+    padding-top: 5%;
+    margin-left: 17.5%;
+    text-align: left;
+}
+
+.subBox {
+    width: 40%;
+    height: 50px;
+    background: white;
+    margin-left: 17.5%;
+    float: left;
+    margin-top: 1%;
+    margin-right: 4%;
+    font-size: 24px;
+    font-family: "Paytone One";
+    color: black;
+}
+
+.subButton {
+    width: 20%;
+    height: 55px;
+    background-color: #A57373;
+    padding: none;
+    border: none;
+    color: white;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: 0.2s;
+    display: block;
+}
+
+.subButton:hover {
+    background: #602F2F;
+}
+
+.subButton h3 {
+    color: white;
+    padding-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.contactRightSection {
+    text-align: center;
+    width: 50%;
+    height: 1200px;
+}
+
+.contactRightSection h1 {
+    margin-top: 8%;
+    color: white;
+}
+
+.imageDark {
+    width: 50%;
+    height: 1200px;
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: -1; 
+    background: black;
+    opacity: 0.7;
+}
+
+.contactPageBg {
+    position: absolute;
+    width: 50%;
+    height: 1200px;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: -2; 
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact h2 {
+    color: white;
+    margin-top: 20%;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.contact h2:hover {
+    color: grey;
+}
+
+/************************************ 
+
+            About Us PAGE 
+
+************************************/
+
+.aboutContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.aboutLeftSection {
+    text-align: left;
+    margin-left: 7%;
+    width: 50%;
+}
+
+.aboutLeftSection h1 {
+    margin-top: 8%;
+    color: white;
+}
+
+.aboutLeftSection h2 {
+    color: white;
+    margin-top: 7%;
+}
+
+.aboutLeftSection p1 {
+    color: white;
+    margin-top: 5%;
+}
+
+.aboutRightSection {
+    text-align: left;
+    width: 50%;
+}
+
+.aboutRightSection h1 {
+    margin-top: 8%;
+    color: white;
+}
+
+.aboutRightSection-2 {
+    width: 100%;
+    display: flex;
+}
+
+.openTextSection h2 {
+    color: white;
+    margin-top: 16%;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.openTextSection h3 {
+    color: white;
+}
+
+.openTextSection p1 {
+    color: white;
+    margin-top: 5%;
+}
+
+.openTextSection {
+    width: 40%;
+}
+
+.openImageSection {
+    width: 60%;
+}
+
+.openImage {
+    width: 70%;
+    height: 600px;
+    margin-top: 8%;
+}
+
+.locationSection {
+    width: 100%;
+}
+
+.locationSection h1 {
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.mapAboutUs {
+    width: 85%;
+    height: 500px;
+    margin-left: 7%;
+    margin-bottom: 5%;
+}
+
+/************************************ 
+
+        PHONE RESOLUTION CSS STYLING 
+
+************************************/
+
+@media only screen and (max-width: 700px){
+    .navbar {
+        height: 75px;
+    }
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .pizzaTrapLogo {
+        display: none;
+    }
+
+    .pizzaTrapLogoPhone {
+        display: block;
+        width: 75px;
+    }
+
+    .dropdown {
+        position: absolute;
+        left: 82%;
+        top: 30px;
+        z-index: 5;
+    }
+
+    #dropDownPhone {
+        display: flex;
+        color: #075229;
+        font-size: 38px;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 50px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 99;
+    }
+      
+    .dropdown-content a {
+        color: #075229;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 8px;
+        font-family: "Paytone One";
+    }
+    
+    .show {
+        display: block;
+    }
+
+    .botNavBar {
+        height: 150px;
+        line-height: 15px;
+    }
+
+    .botNavBar p1 {
+        font-size: 8px;
+    }
+
+    .leftNav {
+        width: 30%;
+    }
+    
+    .midNav {
+        width: 30%;
+    }
+    
+    .rightNav {
+        width: 30%;
+    }
+    
+    .socialLinks {
+        width: 25%;
+    }
+
+    .copyright p3 {
+        font-size: 6px;
+    }
+
+    .button-layer {
+        width: 100%;
+        top: 15px;
+    }
+
+    .button-layer h2 {
+        font-size: 12px;
+    }
+
+    .button-layer h3 {
+        font-size: 8px;
+    }
+
+    .dineInBut {
+        width: 120px;
+        height: 50px;
+    }
+    
+    .takeAwayBut {
+        width: 120px;
+        height: 50px;
+    }
+
+    .dark-layer {
+        height: 100px;
+    }
+    
+    .bg-image {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img-bg {
+        height: 200px;
+    }
+
+    .section-2 {
+        position: relative;
+        display: flex;
+        height: 500px;
+    }
+
+    .section-2 h2 {
+        font-size: 10px;
+    }
+    
+    .peopleIconHome {
+        width: 40%;
+        left: 25%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .reservationButton {
+        width: 90px;
+        height: 30px;
+        left: 25%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .pizzaIconHome {
+        width: 40%;
+        position: absolute;
+        left: 75%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .deliveryButton {
+        width: 90px;
+        height: 30px;
+        left: 75%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .mapHome {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .locationButton {
+        width: 90px;
+        height: 30px;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%,-50%);
+    }
+
+    .menuContainer {
+        width: 100%;
+    }
+    
+    .menuContainer h1 {
+        font-size: 18px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .menuSection {
+        width: 100%;
+    }
+    
+    .menuHeader {
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        z-index: 1;
+    }
+    
+    .headerSticky {
+        position: fixed;
+        top: 3.5%;
+    }
+    
+    .menuHeader a {
+        text-decoration: none;
+    }
+    
+    .menuHeader h3 {
+        font-size: 8px;
+        transition: 0.2s;
+    }
+    
+    .foodSection {
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    
+    .foodItem {
+        width: 20%;
+        height: 80%;
+        line-height: 0.5;
+    }
+    
+    .foodItem p1 {
+        margin-left: 2%;
+        font-size: 8px;
+    }
+    
+    .foodItem p2 {
+        margin-left: 2%;
+        font-size: 6px;
+    }
+
+    .foodItem p3 {
+        font-size: 5px;
+    }
+
+    .ingredients {
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    .addButton {
+        width: 65px;
+    }
+
+    .addButton h3 {
+        font-size: 8px;
+    }
+    
+    .pizza {
+        width: 100%;
+    }
+    
+    .food {
+        padding-top: 50px;
+        width: 90%;
+    }
+    
+    .food h2 {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    
+    .orderSection {
+        display: none;
+    }
+
+    .contactContainer {
+        display: block;
+        width: 100%;
+        height: 1000px;
+    }
+
+    .phoneBasket {
+        width: 90%;
+        height: 50px;
+        display: flex;
+        position: fixed;
+        background: #602F2F;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .phoneBasket p1 {
+        color: white;
+        font-size: 14px;
+    }
+
+    .phoneItems {
+        width: 50%;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .phoneViewBasket {
+        width: 50%;
+        text-align: right;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    
+    .contactLeftSection {
+        width: 100%;
+    }
+    
+    .contactLeftSection h1 {
+        font-size: 18px;
+    }
+    
+    .bookSection {
+        height: 290px;
+    }
+    
+    .bookSection h2 {
+        font-size: 18px;
+    }
+    
+    .bookSection h3 {
+        font-size: 14px;
+    }
+    
+    .date {
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    .time {
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    .partySize {
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    .bookNow h3 {
+        font-size: 10px;
+    }
+    
+    .bookNowButton {
+        height: 40px;
+    }
+    
+    .subscribe {
+        margin-top: 4%;
+    }
+    
+    .subscribe h3 {
+        font-size: 14px;
+    }
+    
+    .subBox {
+        width: 60%;
+        height: 30px;
+        margin-left: 10%;
+        margin-top: 3%;
+        font-size: 14px;
+    }
+    
+    .subButton {
+        width: 20%;
+        height: 40px;
+        margin-top: 3%;
+    }
+    
+    .contactRightSection {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        padding-top: 40px;
+        margin-top: 40px;
+    }
+    
+    .contactRightSection h1 {
+        margin-top: 8%;
+        font-size: 18px;
+    }
+    
+    .imageDark {
+        width: 100%;
+        height: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 500px;
+    }
+    
+    .contactPageBg {
+        width: 100%;
+        height: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 500px;
+    }
+    
+    .contact h2 {
+        font-size: 14px;
+    }
+
+    .aboutContainer {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .aboutLeftSection {
+        width: 80%;
+    }
+    
+    .aboutLeftSection h1 {
+        margin-top: 8%;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .aboutLeftSection h2 {
+        color: white;
+        margin-top: 7%;
+        font-size: 14px;
+    }
+    
+    .aboutLeftSection p1 {
+        color: white;
+        margin-top: 5%;
+        font-size: 9px;
+    }
+    
+    .aboutRightSection {
+        text-align: left;
+        margin-left: 7%;
+        width: 93%;
+    }
+    
+    .aboutRightSection h1 {
+        margin-top: 8%;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .aboutRightSection-2 {
+        width: 100%;
+        display: flex;
+    }
+    
+    .openTextSection h2 {
+        color: white;
+        margin-top: 16%;
+        text-decoration: underline;
+        text-decoration-color: white;
+        font-size: 14px;
+    }
+    
+    .openTextSection h3 {
+        color: white;
+        font-size: 10px;
+    }
+    
+    .openTextSection p1 {
+        color: white;
+        margin-top: 5%;
+        font-size: 9px;
+    }
+    
+    .openTextSection {
+        width: 40%;
+    }
+    
+    .openImageSection {
+        width: 50%;
+    }
+    
+    .openImage {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .locationSection {
+        width: 100%;
+    }
+    
+    .locationSection h1 {
+        margin-left: 7%;
+        font-size: 18px;
+    }
+    
+    .mapAboutUs {
+        width: 85%;
+        height: 200px;
+    }
+}

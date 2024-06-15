@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta carset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Trap - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="navContainer">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="Images/pizzaTrapLogo.png" class="pizzaTrapLogo">
+                <img src="Images/pizzaTrapLogoPhone.png" class="pizzaTrapLogoPhone">
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="selected" href="menu.html"><h2>Menu</h2></a></li>
+                    <li><a href="contactUs.html"><h2>Contact Us</h2></a></li>
+                    <li><a href="aboutUs.html"><h2>About Us</h2></a></li>
+                </ul>
+                <div class="dropdown">
+                    <i onclick="dropDown()" class="material-icons" id="dropDownPhone">reorder</i>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="menu.html">Menu</a>
+                      <a href="contactUs.html">Contact Us</a>
+                      <a href="aboutUs.html">About Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="menuContainer">
+        <div class="menuSection">
+            <h1>Menu</h1>
+            <div class="menuHeader" id="menuHeader">
+                <a href="#pizzaPies">
+                    <h3 id="sectionPizzaPies">Pizza Pies (Pareche)</h3>
+                </a>
+                <a href="#veganPizzas">
+                    <h3 id="sectionVeganPizzas">Vegan Pizzas</h3>
+                </a>
+                <a href="#NYPizzas">
+                    <h3 id="sectionNYPizzas">Big NY Classic Pizzas</h3>
+                </a>
+                <a href="#sides">
+                    <h3 id="sectionSides">Sides</h3>
+                </a>
+            </div>
+            <div class="food">
+                <section id="pizzaPies">
+                    <h2>Pizza Pies (Pareche)</h2>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/margherita.png" class="pizza">
+                            <p1>Margherita (Mākareti)</p1><br>
+                            <p2>$18.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Mozzarella, basil, pecorino, and crushed tomato, 
+                                    all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/mushroom.png" class="pizza">
+                            <p1>Mushroom (Harore)</p1><br>
+                            <p2>$20.00</p2><br>
+                            <div class="ingredients">
+                                <p3>A medley of mushrooms, mozzarella, spinach, pecorino 
+                                    and crushed tomato, all on a hand thrown slow fermented 
+                                    sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/garden.png" class="pizza">
+                            <p1>Garden (Kāri)</p1><br>
+                            <p2>$21.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Olives, red onion, mushroom, spinach, capsicum, garlic, 
+                                    fresh arugula, mozzarella, basil, pecorino and crushed 
+                                    tomato, all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/salami.png" class="pizza">
+                            <p1>Salami (Tōtiti Tote)</p1><br>
+                            <p2>$23.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Salami: various rotating options available (including plant based), 
+                                    garlic, red onion, olives, mozzarella, pecorino, cracked pepper, and 
+                                    crushed tomato, all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/prosciutto.png" class="pizza">
+                            <p1>Prosciutto</p1><br>
+                            <p2>$23.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Prosciutto, garlic, red onion, Gorgonzola, fresh arugula, mozzarella, 
+                                    Pecorino and crushed tomato, all on a hand thrown slow fermented sourdough 
+                                    base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/pineapple.png" class="pizza">
+                            <p1>Pineapple (Paināporo)</p1><br>
+                            <p2>$26.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Prosciutto, mozzarella, basil, pecorino, and house roasted pineapple salsa, 
+                                    all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/bianca.png" class="pizza">
+                            <p1>Bianca (Mā)</p1><br>
+                            <p2>$22.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Choose from artichoke, mushroom, prosciutto, or house cured salmon, mozzarella, 
+                                    ricotta, pecorino and house made white sauce (Dairy & Vegan options available), 
+                                    all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                </section>
+                <section id="veganPizzas">
+                    <h2>Vegan Pizzas</h2>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/veganMargherita.jpg" class="pizza">
+                            <p1>Vegan Margherita</p1><br>
+                            <p2>$18.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Vegan mozzarella + Parmesan (Angel Foods), basil 
+                                    and crushed tomato, all on a hand thrown slow 
+                                    fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/veganMushroom.jpg" class="pizza">
+                            <p1>Vegan Mushroom</p1><br>
+                            <p2>$20.00</p2><br>
+                            <div class="ingredients">
+                                <p3>A medley of mushrooms, Vegan Mozzarella & parmesan 
+                                    (Angel Foods) and crushed tomato, all on a hand thrown
+                                     slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/veganGarden.jpg" class="pizza">
+                            <p1>Vegan Garden</p1><br>
+                            <p2>$21.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Olives, capsicum, red onion, garlic, spinach, mushroom, 
+                                    vegan mozzarella & parmesan (Angel Foods), fresh arugula 
+                                    and crushed tomato, all on a hand thrown slow fermented 
+                                    sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/veganSalami.jpg" class="pizza">
+                            <p1>Vegan Salami</p1><br>
+                            <p2>$23.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Vegan salami (Grater Goods), olives, red onion, garlic, 
+                                    vegan mozzarella & parmesan (Angel Foods), cracked pepper, 
+                                    and crushed tomato, all on a hand thrown slow fermented 
+                                    sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/veganProsciutto.png" class="pizza">
+                            <p1>Vegan Prosciutto</p1><br>
+                            <p2>$23.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Faken (Grater Goods), garlic, red onion, vegan blue cheese 
+                                    (Green Vie), fresh arugula, Vegan Mozzarella & parmesan 
+                                    (Angel Foods), and crushed tomato, all on a hand thrown 
+                                    slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/veganPineapple.jpg" class="pizza">
+                            <p1>Vegan Pineapple</p1><br>
+                            <p2>$26.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Vegan Faken, or Pepperoni (Grater Goods), Vegan Mozzarella & 
+                                    parmesan (Angel Foods), basil, and house roasted pineapple salsa, 
+                                    all on a hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/veganBianca.png" class="pizza">
+                            <p1>Vegan Bianca</p1><br>
+                            <p2>$22.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Choose from artichoke, mushroom, or Carrot Lox (Grater Goods), 
+                                    with vegan blue cheese (Green Vie), Vegan Mozzarella & parmesan 
+                                    (Angel Foods) and house made white sauce (soy based), all on a 
+                                    hand thrown slow fermented sourdough base.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                </section>
+                <section id="NYPizzas">
+                    <h2>Big NY Classic Pizzas</h2>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Classic Cheese</p1><br>
+                            <p2>$17.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Big New York style pie, with mozzarella, pecorino, basil & crushed 
+                                    tomato.<br><br> *may require a slightly longer prep time.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Classic Mushroom</p1><br>
+                            <p2>$20.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Big New York style pie, with a medley of mushrooms, mozzerella, 
+                                    pecorino & crushed tomato.<br><br>*may require a slightly longer prep time.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Classic Pepperoni</p1><br>
+                            <p2>$20.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Big New York style pie, with Ilalian pepperoni, mozzarella, pecorino, 
+                                    cracked pepper & crushed tomato.<br><br>*may require a slightly longer prep time.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Classic Chicken</p1><br>
+                            <p2>$21.00</p2><br>
+                            <div class="ingredients">
+                                <p3>Big New York style pie, with chicken, mozzarella, pecorino & crushed tomato.</p3><br><br>
+                                <p3>*may require a slightly longer prep time.</p3>
+                            </div>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                </section>
+                <section id="sides">
+                    <h2>Sides</h2>
+                    <div class="foodSection">
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Fries</p1><br>
+                            <p1>(Rīwai Parai)</p1><br>
+                            <p2>$10.00</p2><br>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Loaded Fried</p1><br>
+                            <p1>(Parai Putua)</p1><br>
+                            <p2>$14.00</p2><br>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                        <div class="foodItem">
+                            <img src="Images/placeholder.jpg" class="pizza">
+                            <p1>Warm Olives</p1><br>
+                            <p1>(Ōriwa Mahana)</p1><br>
+                            <p2>$10.00</p2><br>
+                            <button class="addButton" type="button"><h3>Add to Cart</h3></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="orderSection">
+            <div class="cartSection" id="cart">
+                <div class="cart">
+                    <h2>Order</h2>
+                    <p1>Your Order Is Empty</p1>
+                </div>
+                <div class="toTop" id="toTop">
+                    <a href="#top">
+                        <p1>Click to go back to top</p1>
+                    </a>
+                </div>
+                <div class="checkOut">
+                    <div class="totalsection">
+                        <div class="totalLeft">
+                            <p1>Total:</p1>
+                        </div>
+                        <div class="totalRight">
+                            <p1>$0.00</p1>
+                        </div>
+                    </div>
+                    <div class="checkOutSection">
+                        <div class="itemsTotal">
+                            <p1>0 Items | $0.00</p1>
+                        </div>
+                        <div class="checkOutItems">
+                            <a href="">
+                                <button class="checkOutButton" type="button"><h3>Check Out</h3></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phoneBasket">
+            <div class="phoneItems">
+                <p1>0 Items | $0.00</p1>
+            </div>
+            <div class="phoneViewBasket">
+                <p1>View Basket</p1>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("menuHeader");
+        var headerSticky = header.offsetTop + 100;
+
+        var cart = document.getElementById("cart");
+        var cartSticky = cart.offsetTop + 90;
+        
+        function myFunction() {
+          if (window.pageYOffset > headerSticky) {
+            header.classList.add("headerSticky");
+            document.getElementById("toTop").style.display = "block";
+          } else {
+            header.classList.remove("headerSticky");
+            document.getElementById("toTop").style.display = "none";
+          }
+          
+          if (window.pageYOffset > cartSticky) {
+            cart.classList.add("cartSticky");
+          } else {
+            cart.classList.remove("cartSticky");
+          }
+        }
+
+        function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.material-icons')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="botNavBar">
+        <div class="leftNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>About Us</p1></a></li>
+                <li><a href="contactUs.html"><p1>Contact Us</p1></a></li>
+                <li><a href="menu.html"><p1>Menu</p1></a></li>
+                <li><a href="contactUs.html"><p1>Book A Reservation</p1></a></li>
+            </ul>
+        </div>
+        <div class="midNav">
+            <ul>
+                <li><a href="contactUs.html"><p1>Social Media</p1></a></li>
+                <li><a href="contactUs.html"><p1>Phone</p1></a></li>
+                <li><a href="https://www.ubereats.com/nz/store/pizza-trap-space-academy/GZQ9SsP2SCWbrNe48BbJwQ?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIlMjBIb21lc3RlYWQlMjBMYW5lJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSlhjMTYwTVdLTVcwUkNEN0RVZXY2eE84JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQS00My41MjUwOSUyQyUyMmxvbmdpdHVkZSUyMiUzQTE3Mi41NzQ0MSU3RA%3D%3D&ps=1" target="_blank"><p1>Delivery</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Opening Hours</p1></a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li><a href="aboutUs.html"><p1>Terms & Conditions</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Refunds</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Cancellations</p1></a></li>
+                <li><a href="aboutUs.html"><p1>Loyalty</p1></a></li>
+            </ul>
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/pizzatrapnz" target="_blank">
+                <img src="Images/facebookLogo.png" class="facebookLogo">
+            </a>
+            <a href="https://www.instagram.com/pizzatrapnz/" target="_blank">
+                <img src="Images/instagramLogo.png" class="instagramLogo">
+            </a>
+        </div>
+        <div class="copyright">
+            <p3>© 2021 Space Academy Ltd.</p3>
+        </div>
+    </div>
+</footer>
+</html>
